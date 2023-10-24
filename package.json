@@ -1,0 +1,35 @@
+{
+	"name": "ailab",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"scrape": "rm -f database/index.json && bun scripts/scrape.js",
+		"server": "",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/kit": "^1.20.4",
+		"@tailwindcss/typography": "^0.5.10",
+		"autoprefixer": "^10.4.16",
+		"bun": "^1.0.7",
+		"cheerio": "^1.0.0-rc.12",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte": "^2.30.0",
+		"openai": "^4.12.4",
+		"postcss": "^8.4.31",
+		"prettier": "^2.8.0",
+		"prettier-plugin-svelte": "^2.10.1",
+		"snarkdown": "^2.0.0",
+		"svelte": "^4.0.5",
+		"tailwindcss": "^3.3.3",
+		"vectra": "^0.4.4",
+		"vite": "^4.4.2"
+	},
+	"type": "module"
+}
